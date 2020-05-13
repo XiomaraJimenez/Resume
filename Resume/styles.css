@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Muli&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: font-family: font-family: 'Muli', sans-serif;
+}
+body{
+    background: #282828;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    animation: Gradient 9s ease infinite;
+    background-size: 400% 400%;
+    color: #a0acb5;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+@-webkit-keyframes Gradient{
+    0%{
+        background-position: 0% 50%
+    }
+    50%{
+        background-position: 100% 50%
+    }
+    
+    100%{
+        background-position: 0% 50%
+    }
+    
+}
+
+/*-------------------icons-------------------*/
+
+.env{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate (-50%,-50%);
+}
+
+.env ul li{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 30%;
+    border: 5px solid #fff;
+    float: left;
+    transition: all 0.5s ease;
+}
+
+.env ul li .fa{
+    color: #fff;
+}
+
+.env ul li:hover:nth-child(1){
+    border: 5px solid #3b5998;
+    box-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+}
+
+.env ul li:hover .fa-facebook{
+    color: #3b5998;
+    text-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;  
+}
+
+/*twitter*/
+.env ul li:hover:nth-child(2){
+    border: 5px solid #00aced;
+    box-shadow: 0 0 15px#00aced ;
+    transition: all 0.5s ease;
+}
+
+.env ul li:hover .fa-twitter{
+    color: #00aced;
+    text-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;  
+}
+
+/*instagram*/
+
+.env ul li:hover:nth-child(3){
+    border: 5px solid #bc2a8d;
+    box-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+}
+
+.env ul li:hover .fa-instagram{
+    color: #bc2a8d;
+    text-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;  
+}
+
+
+.env ul li:hover:nth-child(4){
+    border: 5px solid #4dc247;
+    box-shadow: 0 0 15px #4dc247;
+    transition: all 0.5s ease;
+}
+
+.env ul li:hover .fa-whatsapp{
+    color: #4dc247;
+    text-shadow: 0 0 15px #4dc247;
+    transition: all 0.5s ease;  
+}
+
+
+.main{
+    width: 100%;
+    height: 100%;
+}
+
+.resume{
+    width: 450px;
+    margin: 5px auto;
+    background: #FFDAB9;
+    padding: 15px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.125),
+    -1px -1px 2px rgba(0,0,0,0.125);
+}
+
+.resume .profile_info{
+    text-align: center;
+    
+}
+
+
+.resume .profile_info .profile_img{
+  width: 100px;
+    margin: 0 auto 5px;
+
+}
+
+.resume .profile_info .profile_img img{
+    display: block;
+    width: 100%;
+}
+
+.resume .profile_info .profile_cont .name{
+    font-size:  20px;
+    margin-bottom: 5px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+.resume .profile_info .profile_cont span{
+    color:#8B4513;    
+}
+
+.resume .title{
+    font-size: 16px;
+    font-weight: 700;
+    color: #5558c9;
+    margin-bottom: 15px; 
+}
+
+.Skills img{
+    height: 5%;
+    width: 30%;
+    margin: 5px;
+}
+
+
+.Skills{
+    display: inline-block;
+    width: 28%;
+    padding: 15px -10px;
+    margin: 2%;
+    text-align: center;
+    background:  #f2f4f4f5;
+}
+
+.Skills small{
+   padding-top: 10px;
+    display: block;
+        
+}
+
+.full_infor_cont .tabs ul {
+    display: flex;
+    width: 100%;
+    height: 36px;
+    border: 1px solid #dfe4e6;
+    border-radius: 3px;
+    
+}
+
+.full_infor_cont .tabs ul li {
+    padding: 10px 15px;
+    width: 33.34%;
+    height: 100%;
+    text-align: center;
+    border-right: 1px solid #dfe4e6;
+    background: #f2f4f5;
+    color: #a0acb5;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+
+.full_infor_cont .tabs ul li: last-child {
+    border-right: 0px;
+}
+
+.full_infor_cont .tabs ul li:hover,
+.full_infor_cont .tabs ul li.active{
+    background: #fff;
+    color: #5558c9;
+}
+
+.full_info{
+    padding-top: 15px;
+    height: 295px;
+    overflow: auto;
+  
+}
+.info_cont{
+    padding-left: 5px;
+    
+}
+.info_cont ul li{
+    margin-bottom: 10px;
+}
+
+.info_cont ul li:last-child{
+    margin-bottom: 0px;
+}
+.info_cont .sub_title{
+    font-size: 16px;
+    font-weight: 600;
+    color:  #7377ff;
+}
+.info_cont .info_item{
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+.info_cont .info_item .info_title{
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.info_cont .info_item .data{
+    font-size: 12px;
+}
+.contact .info_cont ul li span{
+    display: inline-block;
+}
+
+.contact .info_cont ul li span.infoname{
+    width: 150px;
+}
+
+.contact .info_cont ul li span.info_comple{
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

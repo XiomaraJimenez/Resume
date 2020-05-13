@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset ="UTF-8">
+        <title>Xiomara Rosado | Resume</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles.css">
+              
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        
+        <script>
+        $(document).ready(function(){
+            $(".full_infor_cont .tabs ul li").click(function(){
+                $(".full_infor_cont .tabs ul li").removeClass("active");
+                
+                $(this).addClass("active");
+                
+                 
+                var datali = $(this).attr("data-li");
+                
+                $(".Full_info_item").hide();
+                if (datali == "Experience"){
+                    $(".Experience").show();
+                    
+                }
+                else if (datali == "Education"){
+                    $(".Education").show();
+                }
+                
+                else if (datali == "Contact"){
+                    $(".Contact").show();
+                }
+                else{
+                    console.log("Loding...")
+                }
+                    
+                
+            })
+            
+        })
+        </script> 
+    </head>
+    
+    <body>
+        <!--------------------------- INFORMATION add photo ------------------------->
+        <div class="main">
+            <div class= "resume">
+                
+                <div class="profile_info">
+                <div class="profile_img">
+                <img src="IMG/profile_potho.jpg" alt="Profile_photo">
+                </div>
+                <div class="profile_cont">
+                    <p class="name"> Xiomara Rosado</p>
+                    <span>Tabasco, Mexico</span>
+                </div>
+                    
+                    <!--------------Social Media
+I DIDNT GET THE CHANCE TO FINISH IT!!! 
+                  
+                    <div class="env">
+                     
+    <ul>
+        <li><i class="fa fa-facebook fa-2x" aria-hidden="true" ></i></li>
+         <li><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></li>
+         <li><i class="fa fa-instagram fa-2x"aria-hidden="true"></i></li>
+         <li><i class="fa fa-whatsapp fa-2x"aria-hidden="true"></i></li>
+    </ul>
+    </div>
+     --->
+                    
+<!-----------------skills------------------------>
+                
+            
+                <div class="Skills">
+                <img src="IMG/JS.png">
+                    <p><b>JavaScript</b></p>
+                    <small>
+                     Is simply dummy text of the printing and typesetting industry. 
+                    </small>
+                </div>
+                
+                <div class="Skills">
+                <img src="IMG/CSS.png">
+                    <p><b>CSS</b></p>
+                    <small>
+                    Is simply dummy text of the printing and typesetting industry.
+                        Lorem 
+                    </small>
+                </div> 
+                
+                <div class="Skills">
+                <img src="IMG/HTML.png">
+                    <p><b>HTML</b></p>
+                    <small>
+                     Is simply dummy text of the printing and typesetting industry.
+                    </small>
+                </div> 
+                
+               
+                <!---------------------tabwith information main one create a bar---------->
+                
+        <div class="full_infor_cont">
+                <div class="tabs">
+                <ul>
+                    <li data-li="Experience" class="active">Experience</li>
+                    <li data-li="Education">Education</li>
+                    <li data-li="Contact">Contact</li>
+                </ul>
+            </div>
+            
+            <div class="full_info">
+                <div class="Full_info_item Experience">
+                <div class="title">WORK EXPERIENCE</div>
+                
+                <div class="info_cont"> 
+                    <ul> 
+                        <li>
+                        <div class="Sub_title">
+                        2010 -2015
+                        </div>
+                            
+                        <div class="info_item">
+                            <div class="info_title">
+                            Twitter
+                            </div>
+                            
+                            <div class="data">
+                          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                            </div>       
+                        
+                        </div>
+                        
+                        
+                        </li>
+                        
+                        <li>
+                        <div class="Sub_title">
+                        2015 -2018
+                        </div>
+                            
+                        <div class="info_item">
+                            <div class="info_title">
+                            Google
+                            </div>
+                            
+                            <div class="data">
+                                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                            </div>     
+                            </div>
+                        </li>
+                        
+                        
+                        <li>
+                        <div class="Sub_title">
+                        2018 - Present
+                        </div>
+                            
+                        <div  class="info_item">
+                            <div class="info_title">
+                            Oracle
+                            </div>
+                            
+                            <div class="data">
+                           Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                            </div>
+                            
+                            </div>
+                        
+                        </li>
+                        
+                        
+                    </ul>
+                </div>
+                    
+                <!-----------education inf--------------------->
+                
+                </div>
+            <div class="Full_info_item Education" style="display: none;">
+                <div class="title">EDUCATION</div>
+                
+                 <div class="info_cont">
+                    <ul>
+                        
+                    <li>
+                        <div class="Sub_title">
+                        2008 -2013
+                        </div>
+                        <div class="info_item">
+                            <div class="info_title">
+                            Dublin School
+                            </div>
+                            
+                            <div class="data">
+                           The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+                            </div>
+                </div>
+                        </li>
+                    
+                        
+                        <li>
+                        <div class="Sub_title">
+                        2000 -2010
+                        </div>
+                            <div class="info_item">
+                            <div class="info_title">
+                            Dublin College
+                            </div>
+                            
+                            <div class="data">
+                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+                                </div>        
+                    </div>
+                        </li>
+                     </ul>
+                </div>
+                </div>                   
+                        
+                
+                <!------- Contact Infor---------------------------->
+            <div class="Full_info_item Contact" style="display: none;">
+                <div class="title">CONTACT</div>
+                <div class ="info_cont">
+                    <ul>
+                    <li>
+                        <span class="infoname">
+                       <b>Email:</b> 
+                        </span>
+                        <span class="info_comple">
+                            xiomararosado.0491@hotmail.com</span>
+                        </li>
+                        
+                        <li>
+                        <span class="infoname">
+                       <b>Website:</b> 
+                        </span>
+                        <span class="info_comple">
+                            Xiomararosado.com</span>
+                        </li>
+                        
+                        <li>
+                        <span class="infoname">
+                        <b>Phone Number:</b>
+                        </span>
+                        <span class="info_comple">
+                         +353 085 819 7883</span>
+                        </li>
+                        
+            
+                    <li>
+                        <span class="infoname">
+                        <b>Facebook:</b>
+                        </span>
+                        <span class="info_comple">
+                         facebook.com/xiomararosado.com</span>
+                    </li>
+                    <li>
+                        <span class="infoname">
+                        <b>Twitter:</b>
+                        </span>
+                        <span class="info_comple">
+                         twitter.com/xiomaraRosado.com</span>
+                    </li>
+                        
+                    </ul>
+                
+                
+                
+                
+                </div>
+                </div>
+                
+            </div>
+            
+        </div>
+            </div>
+        </div>
+
+        
+        </div>
+    </body>
+ 
+
+</html>
